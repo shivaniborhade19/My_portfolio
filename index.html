@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shivani Borhade - AI & IoT Engineer</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f9f9f9;
+        color: #333;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #002147;
+        padding: 15px 30px;
+        color: white;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    header h1 { margin: 0; }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    section {
+        display: none;
+        padding: 40px;
+        background-color: white;
+        animation: fadeIn 0.4s ease-in-out;
+    }
+    section.active {
+        display: block;
+    }
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    /* Intro Section */
+    .intro {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .intro img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid #002147;
+    }
+    .intro-text {
+        max-width: 600px;
+    }
+    .intro-text h2 {
+        margin-top: 0;
+        color: #002147;
+    }
+    /* Video Gallery */
+    .video-gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 40px;
+    }
+    .video-card {
+        max-width: 900px;
+        width: 100%;
+        text-align: center;
+    }
+    .video-card video {
+        width: 100%;
+        max-height: 500px;
+        border-radius: 10px;
+    }
+    /* Section Headings */
+    h2 {
+        color: #002147;
+    }
+    /* Project Cards */
+    .project {
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #eef3f8;
+        border-radius: 8px;
+    }
+    /* Skills List */
+    ul {
+        padding-left: 20px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Shivani Borhade</h1>
+    <nav>
+        <a onclick="showSection('home')">Home</a>
+        <a onclick="showSection('projects')">Projects</a>
+        <a onclick="showSection('skills')">Skills</a>
+        <a onclick="showSection('experience')">Experience</a>
+        <a onclick="showSection('education')">Education</a>
+        <a onclick="showSection('achievements')">Achievements</a>
+    </nav>
+</header>
+
+<!-- Home Section -->
+<section id="home" class="active">
+    <div class="intro">
+        <img src="profile.jpeg" alt="Shivani Borhade">
+        <div class="intro-text">
+            <h2>Hi — I'm Shivani</h2>
+            <p>Innovative AI Engineer | IoT Enthusiast | Smart Systems Developer</p>
+            <p>I build hardware + AI solutions — robotics, computer vision, and language-based systems. 
+            Finalist at Smart India Hackathon 2024. Passionate about regional language tech and deploying 
+            real-world systems for education and public services.</p>
+            <p>📞 +91-9850715293 | 📧 <a href="mailto:shivani.borhade9@gmail.com">shivaniborhade9@gmail.com</a> | 
+            <a href="https://github.com/" target="_blank">GitHub</a></p>
+        </div>
+    </div>
+
+    <div class="video-gallery">
+        <div class="video-card">
+            <video src="Untitled video - Made with Clipchamp.mp4" muted autoplay loop playsinline></video>
+            <p>Industry 4.0 — Robotic Arm</p>
+        </div>
+        <div class="video-card">
+            <video src="smart india hacthon1.mp4" muted autoplay loop playsinline></video>
+            <p>Smart India Hackathon</p>
+        </div>
+        <div class="video-card">
+            <video src="gif.mp4" muted autoplay loop playsinline></video>
+            <p>RoboKavi — AI Poetry Plotter</p>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+        <h3>Industry 4.0 — Robotic Arm</h3>
+         <p>Developed an AI-powered robotic arm for industrial automation using computer vision and IoT integration.</p>
+        <p>Tools: OpenCV, Mediapipe, PyTorch, AutoGUI, RNN, ESP32</p>
+        <p>Built hand gesture recognition using Mediapipe (8 landmarks) for robotic control.</p>
+        <p>Developed RNN-based voice recognition module for commands like “Move Left”, “Pick”.</p>
+        <p> Integrated potentiometer and push-button module for manual control.</p>
+        <p> Demonstrated smart Industry 4.0 Human-Machine Interaction.</p>
+       
+    </div>
+    <div class="project">
+        <h3>Measurement & Monitoring of Counter Services for Post Offices Smart India Hackathon
+2024 Finalist</h3>
+        <p>Summary: AI-powered real-time service tracker improving efficiency at government counters.</p>
+        <p>"Tools:" Python, OpenCV, VS Code, Streamlit</p>
+        <p>Integrated AI-powered image processing to digitize service flow at post offices</p>
+        <p>Created dashboards for real-time data tracking and performance analysis.</p>
+        <p>Delivered user-friendly UI for efficient customer service evaluation.</p>
+        <p>Selected among Top 5 in Smart India Hackathon 2024.</p>
+    </div>
+    <div class="project">
+        <h3>RoboKavi-CoreXY machine with an AI computer </h3> <a href="https://yeralaproject.org/robokavi/" target="_blank">https://yeralaproject.org/robokavi/</a>
+        <p>AI system generating custom Marathi poems via LLM (Gemini API) and auto-writing with a 2D plotter.</p>
+        <p>Developed Flask web app, integrated Google Translate API, engineered pipeline for plotter-ready output (Inkscape, pyaxidraw).</p>
+        <p>Deployed Flask UI on Ubuntu for mobile-friendly access and remote plotter control.</p>
+        <p>Created an AI system that composes poems in Marathi and plots them with a robotic arm on paper.</p>
+    </div>
+    <div class="project">
+        <h3>Multilayered Home Security System </h3>
+        <p>Summary: Secure home system using biometric, RFID, keypad, and motion sensor alerts.</p>
+        <p>Tools: RFID, Keypad, Biometric, Motion Sensor, OpenCV, WhatsApp API, Blink app</p>
+        <p>Developed multi-layered authentication: RFID, keypad, biometric scan.</p>
+        <p>Integrated a backyard surveillance system using a motion sensor and image detection through a camera.</p>
+        <p>Configured an automated alert system to send threat images via WhatsApp</p>
+        <p>Utilized the Blink App for handling real-time security system</p>
+        <p>Created an AI system that composes poems in Marathi and plots them with a robotic arm on paper.</p>
+    </div>
+     <div class="project">
+        <h3>Smart Irrigation System  </h3>
+        <p>Tools: [ Arduino Uno, Moisture Sensor, Python, IDE Platform].</p>
+        <p>Designed an automated irrigation system using an Arduino Uno and a moisture sensor to monitor soil
+moisture levels in real time</p>
+        <p>Integrated Python-based conditional logic to trigger automatic watering when soil moisture dropped below
+a predefined threshold, ensuring efficient water usage.</p>
+        <p>Evaluated system performance by analyzing real-time moisture data, leading to improved water
+conservation and optimized irrigation schedules.</p>
+        <p>Collaborated with [team members] to implement hardware integration and optimize the system for
+reliability and scalability in agricultural applications.</p>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>Programming: Python, SQL, HTML, Flask, Streamlit</li>
+        <li>Internet of Things (IoT) Development</li>
+        <li>AI/ML: Machine Learning, NLP, Deep Learning, Data Analysis, Statistical Analysis, NLP,Gamma</li>
+        <li>Tools & Platforms: Power BI, Python Libraries (NumPy, Pandas, Matplotlib, Scikit-learn, Ten-
+sorFlow, OpenCV, Mediapipe, PyTorch, AutoGUI, BeautifulSoup), Arduino, ESP32 Module, Git,
+GitHub, VS Code, Google Colab, Jupyter Notebook, WordPress,Design/Diagramming Tools (Ex-
+calidraw, Figma), MySQL, SQLite</li>
+        <li>Embedded Systems & Microcontrollers</li>
+         <li>Operating Systems: Ubuntu (System Administration, Remote Access/SSH, AnyDesk, VNC)</li>
+          <li>Soft Skills: Problem-solving, Adaptability, Teamwork, Team Handling</li>
+    </ul>
+</section>
+
+<!-- Experience Section -->
+<section id="experience">
+    <h2>Experience</h2>
+    <p><strong>Intern, Yerala Projects Society </strong> (Mar 2025-Present)</p>
+    <ul>
+        <li>Worked on Python, Flask, Ubuntu, Windows, code-hardware integration, Gemini AI.</li>
+        <li> Developed with WordPress, set up Ubuntu environments, handled remote access via AnyDesk.</li>
+    </ul>
+    <p><strong>Data Science Intern, AI Adventures  </strong> (Dec 2023-Jan 2024, Pune)</p>
+    <ul>
+        <li>Performed data cleaning, preprocessing, and analysis on inbuilt datasets.</li>
+        <li>Visualized Kaggle datasets (Zomato, Amazon) using Python libraries.</li>
+        <li>Utilized Rick and Morty and book APIs for real-time data insights.</li>
+        <li>Developed BeautifulSoup-based web scraper for structured content extraction</li>
+    </ul>
+</section>
+
+<!-- Education Section -->
+<section id="education">
+    <h2>Education</h2>
+    <p><strong>Bachelor of Engineering in Artificial Intelligence & Data Science</strong><br>
+     SavitriBai Phule Pune University, 2025</p>
+     <p>CGPA:8.37</p>
+</section>
+
+<!-- Achievements Section -->
+<section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+    <li> Participated in Anveshna State level competition 2024.</li>
+    <li> Participated in Innovation Submit 2k24 at Infosys</li>
+    <li> Published a research paper on”Multilayered Home Security System” in a UGC Care Approved journal,demonstrating
+    expertise in IoT, biometric authentication, and computer vision for advanced home surveillance</li>
+    <li>Participated in Final Round of National Level Project Competition-2025(NLPC-25)organized by IETE pune Centre
+    at COEP technological university,Pune</li>
+    </ul>
+  <style>
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+    gap: 15px; /* space between images */
+    max-width: 800px; /* center limit */
+    margin: auto; /* center horizontally */
+}
+
+.gallery img {
+    width: 100%; /* fill column space */
+    height: auto; /* keep aspect ratio */
+    border-radius: 10px; /* rounded corners (optional) */
+    object-fit: cover;
+}
+</style>
+
+<div class="gallery">
+    <img src="Robotic arm Anvesna.jpg" alt="Shivani Borhade"> 
+    <img src="smart_india _hack.jpg" alt="Shivani Borhade"> 
+    <img src="WhatsApp Image 2025-08-11 at 13.43.30_93b7d9c4.jpg" alt="Shivani Borhade"> 
+    <img src="WhatsApp Image 2025-08-11 at 22.30.07_41755308.jpg" alt="Shivani Borhade"> 
+    <img src="WhatsApp Image 2025-08-11 at 22.30.06_278c6279.jpg" alt="Shivani Borhade">  
+</div>
+
+    
+</section>
+
+<script>
+    function showSection(id) {
+        document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+        window.scrollTo(0, 0);
+    }
+</script>
+
+</body>
+</html> 
